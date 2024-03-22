@@ -1,0 +1,20 @@
+package com.shinhan.day09;
+
+public class PrintAnnotationExample {
+public static void main(String[] args) throws Exception {
+Method[] declaredMethods = Service.class.getDeclaredMethods();
+for(Method method : declaredMethods) {
+//PrintAnnotation 얻기
+PrintAnnotation printAnnotation = method.getAnnotation
+(PrintAnnotation.class);
+System.out.println(printAnnotation.number());
+System.out.println(printAnnotation.value());
+//설정 정보를 이용해서 선 출력
+printLine(printAnnotation);
+//메소드 호출
+method.invoke(new Service());
+//설정 정보를 이용해서 선 출력
+printLine(printAnnotation);
+}
+}
+

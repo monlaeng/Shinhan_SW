@@ -1,0 +1,22 @@
+package com.shinhan.day09;
+
+public class StringBuilderExample {
+	
+	public static void main(String[] args) {
+		 StringBuilder str = new StringBuilder();
+		 System.out.println(System.identityHashCode(str));
+		 for(int i=1; i<= 100; i++) {
+			 str.append(String.valueOf(i));
+			 System.out.println(System.identityHashCode(str));
+		 }
+		 System.out.println(str);
+	}
+	
+	public static void f(String[] args) {
+		 String str = "";
+		 for(int i=1; i<= 100; i++) {
+		 str += i;
+		 }
+		 System.out.println(str);
+	}
+}

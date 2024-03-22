@@ -1,0 +1,32 @@
+package com.shinhan.day08;
+
+import java.util.Objects;
+
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+//JavaBeans 기술 규격 : field는 private, getter/setter, default 생성자
+//DTO(Data Transfer Object) : data를 전송하기 위해 만듦
+//VO : 
+@EqualsAndHashCode(of = {"title", "author"})
+@ToString
+@Getter@Setter
+@AllArgsConstructor
+public class Book {
+
+	private String title;
+	private int price;
+	private String author;
+
+	public Book() {
+		System.out.println("com.shinhan.day08 패키지에 있는 Book");
+	}
+
+
+	
+
+}

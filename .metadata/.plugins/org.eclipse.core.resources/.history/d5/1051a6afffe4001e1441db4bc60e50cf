@@ -1,0 +1,31 @@
+package com.shinhan.day05;
+
+public class Sparrow  {
+	private String name;
+	private int legs;
+	private int length;
+	
+	public Sparrow(String name, int legs, int length) {
+		this.name = name;
+		this.legs = legs;
+		this.length = length;
+	}
+	
+	void fly() {
+		System.out.printf("참새(%s)는 날아다닙니다.\n", name);
+	}
+	void sing() {
+		System.out.printf("오리(%s)는 소리내어 웁니다.\n",name);
+	}
+	void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		System.out.printf("참새의 이름은 %s 입니다. 다리는 %d개이고 길이는 %d입니다.\\n", name, legs, length);
+
+		return super.toString();
+	}
+
+}

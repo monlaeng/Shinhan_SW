@@ -1,0 +1,56 @@
+package com.shinhan.day06;
+
+public class Account {
+	private String accountNo;
+	private String ownerName;
+	private int balance;
+	
+	public Account() {
+		
+	}
+
+	public Account(String accountNo, String ownerName, int balance) {
+		this.accountNo = accountNo;
+		this.ownerName = ownerName;
+		this.balance = balance;
+	}
+
+	void deposit(int amount) {
+		balance += amount;
+	}
+
+	int withdraw(int amount) {
+		if (balance < amount) {
+			System.out.println("잔고부족, 출금불가");
+			return 0;
+		}
+			
+		balance -= amount;
+		return amount;
+	}
+
+	public String getAccountNo() {
+		return accountNo;
+	}
+
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
+	}
+
+	public String getOwnerName() {
+		return ownerName;
+	}
+
+	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+	
+}

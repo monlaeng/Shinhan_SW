@@ -1,0 +1,68 @@
+package com.shinhan.day08;
+
+public class ObjectTest {
+	public static void main(String[] args) {
+		f5();
+	}
+	
+	private static void f5() {
+		// Object는 상속받아 만든 Integer
+		Book obj1 = new Book("자바다", 20000, ".");
+		Book obj2 = new Book("자바다", 20000, "신");
+
+		System.out.println(obj1 == obj2);// 주소비교
+		System.out.println(obj1.equals(obj2)); // //주소비교를 내용비교로 override 되어있음
+
+		System.out.println(System.identityHashCode(obj1));
+		System.out.println(System.identityHashCode(obj2));
+	}
+	
+	private static void f4() {
+		// Object는 상속받아 만든 Integer
+		Dice obj1 = new Dice(100);
+		Dice obj2 = new Dice(100);
+
+		System.out.println(obj1 == obj2);// 주소비교
+		System.out.println(obj1.equals(obj2)); // //주소비교를 내용비교로 override 되어있음
+
+		System.out.println(System.identityHashCode(obj1));
+		System.out.println(System.identityHashCode(obj2));
+	}
+
+	private static void f3() {
+		// Object는 상속받아 만든 Integer
+		Object obj1 = new Integer(100);
+		Object obj2 = new Integer(100);
+
+		System.out.println(obj1 == obj2);// 주소비교
+		System.out.println(obj1.equals(obj2)); // //주소비교를 내용비교로 override 되어있음
+
+		System.out.println(System.identityHashCode(obj1));
+		System.out.println(System.identityHashCode(obj2));
+	}
+
+
+	private static void f2() {
+		// Object는 상속받아서 만든 String
+		Object obj1 = new String("자바");
+		Object obj2 = new String("자바");
+
+		System.out.println(obj1 == obj2);// 주소비교
+		System.out.println(obj1.equals(obj2)); // //주소비교를 내용비교로 override 되어있음
+
+		System.out.println(System.identityHashCode(obj1));
+		System.out.println(System.identityHashCode(obj2));
+	}
+
+	private static void f1() {
+		// Object는 모든 Object의 부모 class
+		Object obj1 = new Object();
+		Object obj2 = new Object();
+
+		System.out.println(obj1 == obj2);// 주소비교
+		System.out.println(obj1.equals(obj2)); // obj에서는 equals도 주소비교
+
+		System.out.println(System.identityHashCode(obj1));
+		System.out.println(System.identityHashCode(obj2));
+	}
+}

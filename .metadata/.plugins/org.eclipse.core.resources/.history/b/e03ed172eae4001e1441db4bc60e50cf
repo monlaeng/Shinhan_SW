@@ -1,0 +1,12 @@
+package com.shinhan.day05;
+
+public class SingleTonClass {
+	private static SingleTonClass single = new SingleTonClass();
+	private SingleTonClass() {
+		
+	}
+	
+	public static SingleTonClass getInstance() {
+		return single;
+	}
+}

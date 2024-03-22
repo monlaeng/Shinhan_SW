@@ -1,0 +1,21 @@
+package com.shinhan.day05.lab;
+
+public class Account {
+	String account;
+	String name;
+	int money;
+	
+	makeAccount() {
+		
+	}
+	showAccount() {
+		
+	}
+	inputMoney() {
+		
+	}
+	outputMoney() {
+		
+	}
+	
+}

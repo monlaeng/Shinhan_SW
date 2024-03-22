@@ -1,0 +1,11 @@
+package com.shinhan.day09;
+
+//class : 틀 (template), object를 만들기 위해
+//object : instance(실체)
+
+//VO (Value Object : data 저장(field 여러 개), C언어의 structor(스트럭쳐) 비슷
+//DTO(Data Transfer Object) : data 전송목적
+public class ComputerVO {
+	//1.field(data 저장)
+	
+}

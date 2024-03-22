@@ -1,0 +1,17 @@
+package com.shinhan.day04.lab5_2;
+
+public class EmployeeExam {
+
+	public static void main(String[] args) {
+		Employee emp = new Employee("123", "홍길동", 100);
+		emp.setId("555");
+		emp.setName("심은정");
+		emp.setBaseSalary(200);
+		
+		System.out.println(emp.toString());
+		System.out.println();
+		
+		
+	}
+
+}

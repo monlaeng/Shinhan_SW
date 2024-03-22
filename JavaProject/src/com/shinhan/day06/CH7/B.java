@@ -1,0 +1,7 @@
+package com.shinhan.day06.CH7;
+
+public class B extends A {
+	public void method1() {
+		System.out.println("B-method1()");
+	}
+}

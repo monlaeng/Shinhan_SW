@@ -1,0 +1,36 @@
+package com.shinhan.day09;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Parameter;
+import java.net.URL;
+
+public class ObjectTest4 {
+	public static void main(String[] args) throws FileNotFoundException{
+		f2();
+	}
+
+	private static void f2() throws FileNotFoundException {
+		//new FileReader("src/com/shinhan/day09/ComputerVO.java");
+		Class<?> cls = ObjectTest4.class;
+		URL url = cls.getResource("우리반.png");
+		
+		System.out.println(url.getPath());
+	}
+
+	private static void f1() {
+		//리플렛션
+		Class<ComputerVO> cls = ComputerVO.class;
+		Constructor<?>[] cons = cls.getDeclaredConstructors();
+		for(Constructor<?> cc: cons) {
+			System.out.println(cc.getName());
+			System.out.println(cc.getParameterCount());
+			for(Parameter param :cc.getParameters()) {
+				System.out.println(param);
+			};
+			
+			System.out.println("-----------------------");
+		}
+	}
+}

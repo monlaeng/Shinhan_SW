@@ -1,0 +1,60 @@
+package com.shinhan.day05.lab;
+
+import java.util.Scanner;
+
+public class BankApplication {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		boolean isStop = false;
+		Account[] arr = new Account[5];
+		int index = 0;
+		while(!isStop) {
+			menu();
+			String choice = sc.nextLine();
+			switch(choice) {
+			case "1" -> {
+				System.out.println("--------------");
+				System.out.println("계좌생성");
+				System.out.println("--------------");
+				if(index == arr.length) {
+					System.out.println("더이상 계좌생성 불가합니다.");
+					break;
+				}
+				System.out.print("계좌번호: ");
+				String accNo = sc.nextLine();
+				System.out.println("계좌주: ");
+				String owner = sc.nextLine();
+				System.out.println("초기입금액: ");
+				int balance = sc.nextInt();
+				 arr[index++] = new Account(accNo, owner, balance);
+			}
+			case "2" -> {
+				for(Account ac: arr) {
+					System.out.println(ac);
+				}
+			}
+			case "3" -> {
+				
+			}
+			case "4" -> {
+				
+			}
+			case "5" -> {
+				System.out.println("프로그램 종료");
+				isStop = false;
+			}
+			}
+		}
+		sc.close();
+	}
+
+	private static void menu() {
+		System.out.println("-----------------------------------------");
+		System.out.println("  1.계좌생성|2.계좌목록|3.예금|4.출금|5.종료");
+		System.out.println("-----------------------------------------");
+		System.out.printf("선택>");
+	}
+	
+
+}

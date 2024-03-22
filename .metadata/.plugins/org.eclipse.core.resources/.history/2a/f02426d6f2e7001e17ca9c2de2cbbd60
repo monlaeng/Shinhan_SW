@@ -1,0 +1,44 @@
+package com.shinhan.day09;
+
+
+public class ObjectTest3 {
+	public static void main(String[] args) {
+		f4();
+	}
+
+	private static void f4() {
+		Date d1 = new Date();
+		java.util.Date d2 = new java.util.Date();
+		System.out.println(d2);
+		System.out.println(1900 + d2.getYear());
+		System.out.println(d2.getTime());
+	}
+
+	private static void f3() {
+		double a = 5.1;
+		
+		System.out.println(Math.ceil(a));
+		System.out.println(Math.floor(a));
+		System.out.println(Math.round(a));
+	}
+
+	private static void f2() {
+		String s = "100";
+		String s2 = "100.456";
+		int b = Integer.parseInt(s);
+		double d = Double.parseDouble(s2);
+		
+		
+		
+			
+	}
+
+	private static void f1() {
+		Integer a = 100; //Auto Boxing
+		//Integer a = new Integer(100);	//deprecated
+	
+		//int b = a.intValue() + 200;	//unBoxing
+		int b = a + 200;
+		
+	}
+}

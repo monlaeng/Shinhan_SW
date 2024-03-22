@@ -1,0 +1,8 @@
+package com.shinhan.day07.CH8;
+
+public class Car {
+	class Tire{}
+	static class Engine {}
+
+}
+

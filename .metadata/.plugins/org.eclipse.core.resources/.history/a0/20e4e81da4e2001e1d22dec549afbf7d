@@ -1,0 +1,20 @@
+package com.shinhan.day04;
+
+public class PersonTest {
+
+	public static void main(String[] args) {
+		Person pe1 = new Person(20, "김아무개");
+		pe1.getPopulation();
+		Person pe2 = new Person(10, "이아무개");
+		Person pe3 = new Person();
+		pe3.getPopulation();
+		Person pe4 = new Person(15, "박아무개");
+		Person pe5 = new Person();
+		pe5.getPopulation();
+		
+		pe1.selfIntroduce();
+		pe3.selfIntroduce();
+		
+	}
+
+}

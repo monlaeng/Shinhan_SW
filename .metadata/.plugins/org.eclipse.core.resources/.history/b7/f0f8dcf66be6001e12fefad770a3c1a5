@@ -1,0 +1,35 @@
+package com.shinhan.day07;
+
+//외부class
+class OuterClass {
+	//1.instance 변수
+	int a = 100;
+	//2.class 변수
+	static int b = 200;
+	//3.instance method1
+	void method1() {}
+	//4.static method
+	static void method2() {}
+	
+	//instance inner class
+	class InnerClss {
+		//1.instance 변수
+		int a2 = 100;
+		//2.class 변수
+		static int b2 = 200;
+		//3.instance method1
+		void method3() {
+			System.out.println("Inner class의 method3 : " + (a + b + a2 + b2));
+		}
+		
+		//4.static method
+		static void method4() {}
+	}
+}
+
+
+
+public class InnerClassTest {
+	
+	
+}

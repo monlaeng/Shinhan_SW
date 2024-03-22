@@ -1,0 +1,34 @@
+package com.shinhan.day07.CH8;
+
+interface Vehicle {
+	public void run();
+}
+
+class Anonymous {
+	Vehicle field = new Vehicle() {
+		public void run() {
+			System.out.println("자전거가 달립니다.");
+		}
+	};
+
+	void method1() {
+		Vehicle localVal = new Vehicle() {
+			public void run() {
+				System.out.println();
+			}
+		};
+	}
+}
+
+public class AnonymousExample {
+	public static void main(String[] args) {
+		Anonymous anony = new Anonymous();
+		anony.field.run();
+		anony.method1();
+		anony.method2(new Vehicle() {
+			public void run() {
+				System.out.println("트럭이 달립니다.");
+			}
+		});
+	}
+}

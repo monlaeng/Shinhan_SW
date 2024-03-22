@@ -1,0 +1,48 @@
+package com.shinhan.day04;
+
+public class Car {
+
+	//1.field(특징, 변수, data저장, 멤버변수)
+	private String company="현대자동차";
+	private String model;
+	private String color;
+	private int maxSpeed;
+	
+	//2.constructor(생성자)...생성하는 여러가지 방법을 정의(Overloading)
+	Car() {
+		System.out.println("default 생성자...argument없음");
+	}
+	Car(String model, String color, int maxSpeed) {
+		//super(); 부모생성된다.
+		this.model = model;
+		this.color = color;
+		this.maxSpeed = maxSpeed;
+	}
+	Car(String model, int maxSpeed, String color) {
+		this(model, color, maxSpeed);	//생성자 호출(첫 번째 줄에서만 가능), super() 부분이 수행안함
+	}
+	Car( String color, int maxSpeed) {
+		this(null, color, maxSpeed);	//생성자 호출(첫 번째 줄에서만 가능), super() 부분이 수행안함
+	}
+	Car( String model) {
+		this(model, null, 0);	//생성자 호출(첫 번째 줄에서만 가능), super() 부분이 수행안함
+	}
+	
+	//멤버변수
+	String first;
+	
+	//3.메서드(기능, 동작, 문장들의 묶음, return type 반드시 필요, return 없으면 void
+	void CarInfoPrint(String title) {
+		//지역변수
+		String second = null;
+		System.out.println(title);
+		System.out.println("===========Car의 정보==============");
+		System.out.println("company : " + company);
+		System.out.println("모델 : " + model);
+		System.out.println("color : " + color);
+		System.out.println("maxSpeed : " + maxSpeed);
+		System.out.println("first : " + first);
+		System.out.println("second : " + second);
+	}
+
+}

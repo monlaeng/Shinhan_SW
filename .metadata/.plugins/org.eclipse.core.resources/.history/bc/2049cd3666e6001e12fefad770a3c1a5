@@ -1,0 +1,27 @@
+package com.shinhan.day07;
+
+import com.shinhan.day07.lab2.Shape;
+
+public abstract class Rectangle extends Shape {
+
+	double width;
+	double height;
+	
+	Rectangle(double w, double h) {
+		this.width = w;
+		this.height =h;
+	}
+
+	@Override
+	double getArea() {
+		// TODO Auto-generated method stub
+		return width*height;
+	}
+
+	@Override
+	double getPerimeter() {
+		// TODO Auto-generated method stub
+		return 2 * (width + height);
+	}
+
+}
