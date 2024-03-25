@@ -1,0 +1,11 @@
+package com.shinhan.day10;
+
+public class Util {
+
+	public static Integer getValue(Pair<String, Integer> pair, String string) {
+		if(pair.getKey().equals(string))
+			return pair.getValue(); 
+		return null;
+	}
+
+}

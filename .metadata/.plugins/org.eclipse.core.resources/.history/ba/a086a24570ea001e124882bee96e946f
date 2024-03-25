@@ -1,0 +1,18 @@
+package com.shinhan.day10.thread;
+
+
+//process : 실행중인 하나의 프로그램
+//thread : 하나의 process 내의 프로그램의 흐름
+//Thread Class이용하면 MultiThread 프로그램이 가능
+public class MultiThreadTest {
+	public static void main(String[] args) {
+		System.out.println(Thread.currentThread().getName() + "main thread 시작............");
+		//1.영문자 대문자 출력
+		for(char i = "")
+		//2.영문자 소문자 출력
+		//3.숫자 1~26 출력
+		
+	
+		System.out.println("main thread 끝");
+	}
+}

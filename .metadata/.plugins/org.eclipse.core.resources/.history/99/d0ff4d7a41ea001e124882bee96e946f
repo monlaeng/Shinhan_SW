@@ -1,0 +1,17 @@
+package com.shinhan.day10;
+
+public class GenericTest {
+	public static void main(String[] args) {
+		f1();
+	}
+
+	private static void f1() {
+		Box box1 = new Box();
+		box1.setContent(100);
+		box1.setContent("100");
+		box1.setContent(new CoffeeMachine());
+		
+		
+		box1.getContent();
+	}
+}
