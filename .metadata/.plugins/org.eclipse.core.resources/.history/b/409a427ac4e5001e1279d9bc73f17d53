@@ -1,7 +1,0 @@
-package com.shinhan.day07;
-
-import com.shinhan.day06.Account;
-
-public class AccountChild extends Account {
-
-}

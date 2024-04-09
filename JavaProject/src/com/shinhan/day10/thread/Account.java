@@ -1,14 +1,16 @@
 package com.shinhan.day10.thread;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @AllArgsConstructor
 public class Account {
 	String accountNo;
 	String ownerName;
 	int balance;
 	
-	void deposit(int amount) {
+	public void deposit(int amount) {
 		balance += amount;
 	}
 	int withdraw(int amount) {

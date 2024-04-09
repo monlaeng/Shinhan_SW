@@ -1,6 +1,0 @@
-package com.shinhan.day10.thread;
-
-public class ShareArea {
-	Account lee;	
-	Account sung;
-}

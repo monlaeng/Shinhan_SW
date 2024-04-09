@@ -2,8 +2,10 @@ package com.shinhan.day10.thread;
 
 public class MultiThreadTest2 {
 
-	public static void f3(String[] args) {
+	public static void main(String[] args) {
+		//공유데이터
 		BathRoom room = new BathRoom();
+		//흐름 3개 만듦
 		BathRoomThread t1 = new BathRoomThread(room, "김");
 		BathRoomThread t2 = new BathRoomThread(room, "박");
 		BathRoomThread t3 = new BathRoomThread(room, "양");
@@ -14,7 +16,7 @@ public class MultiThreadTest2 {
 	}
 	
 	
-	public static void main(String[] args) {
+	public static void f2(String[] args) {
 		
 		ShareArea shareArea = new ShareArea(
 				new Account("112", "이몽룡", 2000),

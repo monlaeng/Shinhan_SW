@@ -1,7 +1,0 @@
-package com.shinhan.day07.CH8;
-
-public class ActionExample {
-	public static void main(String[] args) {
-		Action action = 
-	}
-}
