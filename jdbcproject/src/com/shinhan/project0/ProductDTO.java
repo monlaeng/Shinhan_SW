@@ -7,8 +7,8 @@ import lombok.ToString;
 
 @Getter @Setter @ToString
 public class ProductDTO {
-	private int prod_id;
-	private String prod_name;
-	private int prod_count;
-	private int prod_price;
+	private int product_id;
+	private String product_name;
+	private int product_count;
+	private int product_price;
 }
